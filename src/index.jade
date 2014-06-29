@@ -1,0 +1,21 @@
+doctype 5
+html(lang="en")
+	head
+		title=pageTitle
+		meta( name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+		link( href='http://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%7CSorts+Mill+Goudy%3A400italic%2C400&#038;ver=3.7-alpha-25343', rel='stylesheet', type='text/css')
+		link( href='//cloud.typography.com/7598912/612904/css/fonts.css', rel='stylesheet', type='text/css')
+		link( href='big.css', rel='stylesheet', type='text/css')
+	body
+		- each val in slideContent 
+			- var isImg = new RegExp(/jpg|jpeg|png|gif/g)
+			if isImg.test( val )
+				.slide
+					img( src=val )
+			else if 'gist' == val.substring(0,4)
+				.slide
+					script( src='http://'+val)
+			else
+				.slide!=val
+
+		script(type='text/javascript', src="big.js")
