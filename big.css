@@ -1,0 +1,55 @@
+body {
+  letter-spacing:-5px;
+  background: url("img/retinawood.png");
+  color:#900;
+  margin:0;
+  padding:0;
+  background-size:contain; 
+  font-family: 'Verlag Cond A', 'Verlag Cond B'; 
+  font-weight: 200; 
+  font-style: normal;
+}
+
+h1, h2, h3, p {
+  margin:0;
+}
+
+em, a {
+  font-style:normal;
+  font-weight:700;
+}
+
+a {
+  text-decoration:none;
+  color:#8dbd0c;
+}
+
+img {
+  width:100%;
+}
+
+.slide {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0px;
+  left:0px;
+  padding:75px;
+  line-height:97%;
+}
+.gist{
+  line-height:110%;
+  letter-spacing:0;
+
+}
+
+div.center {
+  text-align:center;
+}
+
+div.imageText {
+  text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+small{
+	font-size: 50%;
+}
