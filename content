@@ -1,24 +1,44 @@
 Contributing <em>Code</em> to <em>Core</em>
-Step by Step, how you can do that
+Step by Step, how you can do it 
 <em>Not for Security Issues</em>
+security@wordpress.org
 1) Run the <em>Trunk</em> Version of WordPress
-http://develop.svn.wordpress.org/trunk/
+https://develop.svn.wordpress.org/trunk/
+git://develop.git.wordpress.org/trunk/
+npm install
 2) <em>Confirm</em> it is still an issue
 3) Create a ticket on <em>trac</em>
-http://core.trac.wordpress.org/
+https://core.trac.wordpress.org/
 WordPress.org username
 Be Descriptive
 Use Details 
-gist.github.com/aaronjorbin/d63147097bb68eba5397.js
-4) Create A Ticket 
-5) Upload a <em>patch</em>
-6) Trac Keywords Let others know what is going on
-http://codex.wordpress.org/Reporting_Bugs#Trac_Keywords
-7) Champion Your Ticket
-IRC
-irc.freenode.net
-Core Chat:  #wordpress-dev Wednesdays @ 20:00 UTC 
-A11Y Chat: #wordpress-ui Wednesday at 19:00 UTC 
-Refresh, Update, Iterate
-http://codex.wordpress.org/Reporting_Bugs
-Aaron&nbsp;<em>Jorbin</em><br/><em>Mike</em>&nbsp;Schroder<br/><br/>#blamenacin
+Steps to Reproduce
+Environment
+Screencast
+Screenshots
+Upload code that demonstrates
+4) Upload a <em>patch</em>
+Generate from root of checkout
+svn diff > bugnumber.<em>diff</em>
+git diff > bugnumber.<em>diff</em> 
+5) Trac Keywords Let others know what is going on
+dev-feedback 
+reporter-feedback 
+ux-feedback and ui-feedback 
+has-patch needs-patch 
+needs-refresh 
+commit 
+needs-unit-tests 
+close
+6) Champion Your Ticket
+Slack
+https://chat.wordpress.org
+7) Refresh, Update, Iterate, Test
+grunt patch:ticketNumber
+Unit Tests
+grunt phpunit
+grunt qunit
+https://codex.wordpress.org/Reporting_Bugs
+https://make.wordpress.org/core/handbook/
+https://make.wordpress.org/core/handbook/coding-standards/
+Aaron&nbsp;<em>Jorbin</em>
