@@ -1,4 +1,4 @@
-Contributing <em>Code</em> to <em>Core</em>
+Intro to Trac
 Step by Step, how you can do it 
 <em>Not for Security Issues</em>
 security@wordpress.org
@@ -17,28 +17,38 @@ Environment
 Screencast
 Screenshots
 Upload code that demonstrates
-4) Upload a <em>patch</em>
+4) Work on a Solution
+5) Upload a <em>patch</em>
 Generate from root of checkout
 svn diff > bugnumber.<em>diff</em>
 git diff > bugnumber.<em>diff</em> 
-5) Trac Keywords Let others know what is going on
+6) Trac Keywords Let others know what is going on
 dev-feedback 
 reporter-feedback 
+2nd-opinion
 ux-feedback and ui-feedback 
-has-patch needs-patch 
+has-patch 
+needs-patch 
 needs-refresh 
-commit 
 needs-unit-tests 
+needs-testing
+needs-docs
+commit 
 close
-6) Champion Your Ticket
+7) Champion Your Ticket
 Slack
 https://chat.wordpress.org
-7) Refresh, Update, Iterate, Test
+#core
+Weekly Bug Scrubs
+Tuesday&nbsp;15:00UTC Thursday&nbsp;00:00UTC
+Weekly Core Chats
+Wednesday&nbsp;20:00UTC
+8) Refresh, Update, Iterate, Test
 grunt patch:ticketNumber
 Unit Tests
 grunt phpunit
 grunt qunit
-https://codex.wordpress.org/Reporting_Bugs
+https://make.wordpress.org/core/handbook/reporting-bugs/
 https://make.wordpress.org/core/handbook/
 https://make.wordpress.org/core/handbook/coding-standards/
 Aaron&nbsp;<em>Jorbin</em>
